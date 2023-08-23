@@ -3,7 +3,7 @@ import logging
 
 def log_fun():
     logger = logging.getLogger()
-    filehandler = logging.FileHandler("LogFile.log")
+    filehandler = logging.FileHandler(r"C:\Users\xint\PycharmProjects\ApiTesting\Logs\LogFile.log")
     formatter = logging.Formatter('')
     filehandler.setFormatter(formatter)
     logger.addHandler(filehandler)
