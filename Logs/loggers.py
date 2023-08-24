@@ -10,3 +10,5 @@ def log_fun():
     logger.setLevel(logging.DEBUG)
 
     return logger
+# %(acstime)s: %(levelname)s: %(module)s: %(funcName)s: %(message)s
+# , datefmt='%d%m%Y %I:%M:%S %p'

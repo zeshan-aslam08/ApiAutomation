@@ -12,7 +12,7 @@ class LoginPage:
     def login_with_valid_credentials(self):
         """
         This Login API is used for valid credentials
-        :return: flag indicating success or failure
+        :return: status
         """
         flag = True
         try:
@@ -30,7 +30,7 @@ class LoginPage:
             #     flag = False
             # else:
             #     self.log.info("Token exists in the response")
-        except requests.exceptions.RequestException as e:
+        except Exception as e:
             self.log.error(f"An error occurred during the request: {e}")
             flag = False
         return flag
@@ -40,7 +40,7 @@ class LoginPage:
     def login_with_invalid_credentials(self):
         """
         This Login API is used for valid credentials
-        :return: flag indicating success or failure
+        :return: status
         """
         flag = True
         try:
@@ -68,7 +68,7 @@ class LoginPage:
     def login_with_invalid_Name(self):
         """
         This Login API is used for valid credentials
-        :return: flag indicating success or failure
+        :return: status
         """
         flag = True
         try:

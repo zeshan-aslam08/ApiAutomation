@@ -1,13 +1,18 @@
 import requests
 
-from test_data.Franchise_data import payload
+
+from test_data.test_data import franchise_payload
 
 
 class CreateFranchise:
 
     def Create_Franchise_with_valid_credentials(self):
+        """
+        Create a franchise with a valid credentials Method
+        :return:status
+        """
         flag = True
-        response = requests.post("https://dev-corporate.mytmdev.com/api/create-franchise", data=payload)
+        response = requests.post("https://dev-corporate.mytmdev.com/api/create-franchise", data=franchise_payload)
         response_status = response.status_code
         print(response_status)
         if response_status != 200:
