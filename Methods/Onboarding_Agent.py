@@ -2,9 +2,9 @@ import requests
 import json
 import jsonpath
 from Logs import loggers
-from test_data.test_data import payload, invalid_payload, invalid_Name_payload
+from test_data.test_data import payload, invalid_payload, invalid_Name_payload, franchise_payload
 
-
+########################***Agent Login***#################################
 class LoginPage:
     log = loggers.log_fun()
 
@@ -91,3 +91,20 @@ class LoginPage:
             self.log.error(f"An error occurred during the request: {e}")
             flag = False
         return flag
+
+#########################***Forget Password***#########################
+    def Create_Franchise_with_valid_credentials(self):
+        """
+        Create a franchise with a valid credentials Method
+        :return:status
+        """
+        flag = True
+        response = requests.post("https://dev-corporate.mytmdev.com/api/create-franchise", data=franchise_payload)
+        response_status = response.status_code
+        print(response_status)
+        if response_status != 200:
+            flag = False
+        else:
+            print(f"f(Response Code :{response_status}")
+        return flag
+

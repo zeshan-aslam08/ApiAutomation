@@ -1,4 +1,4 @@
-#############################**Login Testdata**########################################
+#############################*** Login Testdata ***########################################
 
 payload = {
     'email': 'naina+65@xintsolutions.com',
@@ -24,7 +24,7 @@ Empty_payload = {
     'email': 'esaytdusaivdsad',
     'password': '6adtsadsadasysadls'
 }
-################################**Franchise_data**###########################################
+################################*** Franchise_data ***###########################################
 
 franchise_payload = {'corporate_id': '1',
                      'franchise_id': 'MYTM00HH350',
@@ -38,3 +38,21 @@ franchise_payload = {'corporate_id': '1',
                      'franchise_address': '63, Block R 1 Phase 2 joha town lahore',
                      'subscription_fee': '0',
                      'collect_amount': '100'}
+
+
+franchise_empty_payload = {'corporate_id': '',
+                             'franchise_id': '',
+                             'franchise_name': '',
+                             'lat': '',
+                             'lng': '',
+                             'franchise_user_name': '',
+                             'phone': '',
+                             'cnic': '',
+                             'password': '123456',
+                             'franchise_address': '',
+                             'subscription_fee': '',
+                             'collect_amount': ''
+                             }
+
+
+

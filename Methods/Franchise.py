@@ -1,9 +1,9 @@
 import requests
 
-
 from test_data.test_data import franchise_payload
 
 
+#########################***Create Franchise***#########################
 class CreateFranchise:
 
     def Create_Franchise_with_valid_credentials(self):
@@ -20,3 +20,22 @@ class CreateFranchise:
         else:
             print(f"f(Response Code :{response_status}")
         return flag
+
+
+#################################***Franchise TopUp***#################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################***Franchise TopUp List***#################################

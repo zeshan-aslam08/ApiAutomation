@@ -1,8 +1,8 @@
 
 
-from Methods.LoginAgent import LoginPage
+from Methods.Onboarding_Agent import LoginPage
 
-
+#############################***Agent Login***##############################
 class TestLogin(LoginPage):
     def test_login_with_valid_credentials(self):
         """
@@ -24,3 +24,5 @@ class TestLogin(LoginPage):
         """
         flag = self.login_with_invalid_Name()
         assert flag is True
+
+#########################***Forget Password***################################
